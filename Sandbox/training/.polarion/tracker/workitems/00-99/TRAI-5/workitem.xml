@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work-item>
+    <field id="author">admin</field>
+    <field id="created">2024-03-04 11:38:22.000 +0300</field>
+    <field id="description" text-type="text/html">&lt;b&gt;Test Run:&lt;/b&gt; &lt;span id="link" class="polarion-rte-link" data-type="testRun" data-item-id="testRunDemo_2" data-option-id="long"&gt;&lt;/span&gt;&lt;br/&gt;&lt;b&gt;Test Case:&lt;/b&gt; &lt;span id="link" class="polarion-rte-link" data-type="workItem" data-item-id="TRAI-3" data-revision="614" data-option-id="long"&gt;&lt;/span&gt;&lt;br/&gt;&lt;table style="margin-bottom: 15px; ;border-collapse: collapse; width:100%; " class="polarion-no-style-cleanup"&gt;&lt;tr&gt;&lt;th style="width: 80%; text-align: left; background-color: #ffffff;"&gt;Test Case Verdict:&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="vertical-align: top;"&gt;&lt;span style="font-weight: bold;"&gt;&lt;span style="color: #C30000;"&gt;&lt;span class="polarion-no-style-cleanup" title="Failed"&gt;&lt;span style="white-space:nowrap;"&gt;&lt;img src="/polarion/icons/default/enums/testrun_status_failed.png" class="polarion-Icons polarion-no-style-cleanup" onmousedown="return false;" contenteditable="false"/&gt;&lt;/span&gt;Failed&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt; failed&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</field>
+    <field id="linkedWorkItems">
+        <list>
+            <struct>
+                <item id="revision">614</item>
+                <item id="role">triggered_by</item>
+                <item id="workItem">TRAI-3</item>
+            </struct>
+        </list>
+    </field>
+    <field id="priority">50.0</field>
+    <field id="severity">normal</field>
+    <field id="status">open</field>
+    <field id="title">Failed: Demo-3</field>
+    <field id="type">defect</field>
+</work-item>

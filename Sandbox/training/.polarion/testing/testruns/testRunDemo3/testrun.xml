@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test-run>
+    <field id="author">admin</field>
+    <field id="created">2024-03-04 11:46:42.662 +0300</field>
+    <field id="records">
+        <list>
+            <struct>
+                <item id="duration">12.0</item>
+                <item id="executed">2024-03-04 11:47:05.030 +0300</item>
+                <item id="executedBy">admin</item>
+                <item id="result">passed</item>
+                <item id="signed">true</item>
+                <item id="testCase">TRAI-2</item>
+                <item id="testCaseRevision">613</item>
+            </struct>
+            <struct>
+                <item id="defect">TRAI-5</item>
+                <item id="duration">70.0</item>
+                <item id="executed">2024-03-04 11:48:15.342 +0300</item>
+                <item id="executedBy">admin</item>
+                <item id="result">failed</item>
+                <item id="signed">true</item>
+                <item id="testCase">TRAI-3</item>
+                <item id="testCaseRevision">636</item>
+                <item id="testStepResults">
+                    <list>
+                        <struct>
+                            <item id="comment" text-type="text/html">Passed</item>
+                            <item id="result">passed</item>
+                        </struct>
+                        <struct>
+                            <item id="comment" text-type="text/html">failed</item>
+                            <item id="result">failed</item>
+                        </struct>
+                        <struct>
+                            <item id="result">blocked</item>
+                        </struct>
+                    </list>
+                </item>
+            </struct>
+            <struct>
+                <item id="duration">6.0</item>
+                <item id="executed">2024-03-04 11:48:21.814 +0300</item>
+                <item id="executedBy">admin</item>
+                <item id="result">passed</item>
+                <item id="signed">true</item>
+                <item id="testCase">TRAI-1</item>
+                <item id="testCaseRevision">612</item>
+            </struct>
+        </list>
+    </field>
+    <field id="status">open</field>
+    <field id="template">testRunTemplate_v1</field>
+    <field id="title">testRunTemplate_v1</field>
+    <field id="type">manual</field>
+    <field id="useReportFromTemplate">true</field>
+</test-run>

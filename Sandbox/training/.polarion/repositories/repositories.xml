@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repositories>
+  <default>
+    <id>default</id>
+    <name>Default</name>
+    <defaultBranch></defaultBranch>
+    <branch></branch>
+    <branchFilter></branchFilter>
+    <enabled>true</enabled>
+  </default>
+  <git>
+    <id>git</id>
+    <name>git</name>
+    <enabled>true</enabled>
+    <localRepository>C:/Users/Alp/test2.git</localRepository>
+    <isMaster>true</isMaster>
+  </git>
+</repositories>

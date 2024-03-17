@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fields>
+    <field id="testSteps" name="Test Steps" type="struct:TestSteps"/>
+</fields>

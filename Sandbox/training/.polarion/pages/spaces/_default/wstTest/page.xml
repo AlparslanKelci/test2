@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rich-page>
+    <field id="author">admin</field>
+    <field id="created">2024-03-17 15:40:45.199 +0300</field>
+    <field id="homePageContent" text-type="text/html"><![CDATA[<div class="polarion-rp-column" style="width: 100%;">
+  <h1 id="polarion_hardcoded_0">wstTest</h1>
+  <p id="polarion_hardcoded_1">This Page has no content yet</p>
+</div>
+<div class="polarion-rp-row-separator" page_min_width="1000"></div>
+<div class="polarion-rp-column" style="width: 70%;">
+  <p id="polarion_hardcoded_2"></p>
+  <div id="polarion_client1" class="polarion-rp-widget-part" data-widget="com.polarion.scriptBlock">
+    <span class="polarion-rp-widget-parameters">
+      <sub id="script">
+        <sub id="script" style="white-space:pre;">#set($repoService = $polarionTool.getRepositoryService())
+#set($connection = $repoService.getReadOnlyConnection($polarionTool.getLocation()))
+#set($path = &quot;/.polarion/announcements/announcements.rss&quot;)
+#set($input = $connection.getContent($polarionTool.getLocation().getLocation($path)))
+#set($doc = $xmlTool.getDocumentBuilderFactory().newDocumentBuilder().parse($input))
+RSS contains $doc.getDocumentElement().getElementsByTagName(&quot;item&quot;).length items.
+
+#set($fbRepository = $polarionTool.getFactBaseRepository())
+#set($fbId = &quot;workitems-data&quot;)
+#set($prjId = &quot;drivepilot&quot;)
+#set($workItemsData  = $fbRepository.loadFactBase($fbId, $prjId, null, false))
+#set($factId = &quot;RESOLVED-UNRESOLVED.UNRESOLVED&quot;)
+Unresolved Work Items: $workItemsData.findElement($factId).getValue()
+
+#set($enumType = $polarionTool.getTypeFactory().getEnumType(&quot;status&quot;))
+#set($contextId = $trackerService.getTrackerProject(&quot;drivepilot&quot;).getContextId())
+#set($dataService = $trackerService.getDataService())
+#set($statusEnum = $dataService.getEnumerationForEnumId($enumType, $contextId))
+$statusEnum.getAllOptions()
+
+#set($project = $trackerService.getTrackerProject(&quot;drivepilot&quot;))
+#set($moduleManager = $trackerService.getModuleManager())
+$moduleManager.getModules($project, $polarionTool.getLocation())</sub>
+      </sub>
+    </span>
+  </div>
+</div>
+<div class="polarion-rp-column" style="width: 30%;">
+  <p id="polarion_hardcoded_3"></p>
+</div>
+<div class="polarion-rp-row-separator"></div>]]></field>
+    <field id="title">wstTest</field>
+</rich-page>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource-traceability>
+   <categories>
+     <!-- Alltaki satırda istediğimiz bir kategori adı ve ID'si belirleyebiliriz -->
+     <category id="software" name="Software">
+        <repositories>
+           <!-- Alltaki satırda hangi repository sağlayıcı üzerinden
+           yapılan değişikliklerin taranacağını belirliyoruz -->
+           <repositoryConfiguration id="default" repository="default">
+ 
+              
+                  <paths>
+                     <path dir="Sandbox/training/trunk/src/main/java"/>
+                  </paths>
+           </repositoryConfiguration>
+        </repositories>
+        <schedulers>
+            <!-- Cron Syntax ile kod taramalarını periyodik olarak zamanlama
+ayarıdır.
+            Cron Syntax basitçe "Saniye Dakika Saat Gün Ay YIL" olarak düşünülebilir
+            Örneğin "0 */60 * * * *" buradaki boşluktan sonra gelen */60 her dakika
+bölü 60 sürede çalıştır anlamındadır.-->
+            <scheduler cron="0 */60 * * * *"/>
+        </schedulers>
+        <fileParsers>
+            <!-- Polarion Java, C ve XML Parser'larını desteklemektedir buraya bir
+veya daha fazla parser ekleyebilirsiniz -->
+            <fileParser extensions=".java" id="javaParser" name="com.siemens.polarion.rt.parsers.java">
+            </fileParser>
+            <fileParser extensions=".xml" id="xmlParser" name="com.siemens.polarion.rt.parsers.xml">
+            </fileParser>
+        </fileParsers>
+      </category>
+   </categories>
+</resource-traceability>

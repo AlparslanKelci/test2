@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test-run>
+    <field id="author">admin</field>
+    <field id="created">2024-03-04 11:17:11.241 +0300</field>
+    <field id="environmentDescription" text-type="text/html" type="text/html">&lt;html&gt;&lt;head&gt;&lt;META http-equiv="Content-Type" content="text/html; charset=UTF-8"&gt;&lt;meta content="HTML Tidy for Java (vers. 26 Eyl 2004), see www.w3.org" name="generator"&gt;&lt;title&gt;&lt;/title&gt;&lt;/head&gt;&lt;body&gt;Android&lt;/body&gt;&lt;/html&gt;</field>
+    <field id="records">
+        <list>
+            <struct>
+                <item id="comment" text-type="text/html">Passed</item>
+                <item id="duration">46.0</item>
+                <item id="executed">2024-03-04 11:23:20.718 +0300</item>
+                <item id="executedBy">admin</item>
+                <item id="result">passed</item>
+                <item id="signed">true</item>
+                <item id="testCase">TRAI-2</item>
+                <item id="testCaseRevision">613</item>
+            </struct>
+            <struct>
+                <item id="comment" text-type="text/html"><![CDATA[Failed<br/>
+<span style="font-weight: bold;">Retest comment:</span><br/>
+this time succeded]]></item>
+                <item id="defect">TRAI-4</item>
+                <item id="duration">37.0</item>
+                <item id="executed">2024-03-04 11:31:01.156 +0300</item>
+                <item id="executedBy">admin</item>
+                <item id="result">passed</item>
+                <item id="signed">true</item>
+                <item id="testCase">TRAI-3</item>
+                <item id="testCaseRevision">614</item>
+            </struct>
+            <struct>
+                <item id="comment" text-type="text/html">blocked</item>
+                <item id="duration">18.0</item>
+                <item id="executed">2024-03-04 11:24:59.726 +0300</item>
+                <item id="executedBy">admin</item>
+                <item id="result">blocked</item>
+                <item id="signed">true</item>
+                <item id="testCase">TRAI-1</item>
+                <item id="testCaseRevision">612</item>
+            </struct>
+        </list>
+    </field>
+    <field id="status">inProgress</field>
+    <field id="template">testRunTemplate_v1</field>
+    <field id="title">testRunTemplate_v1</field>
+    <field id="type">manual</field>
+    <field id="useReportFromTemplate">true</field>
+</test-run>

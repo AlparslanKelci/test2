@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <field id="active">true</field>
+    <field id="color">transparent</field>
+    <field id="icon">/polarion/ria/images/topicIcons/project.svg</field>
+    <field id="lead">admin</field>
+    <field id="name">training</field>
+    <field id="start">2024-03-04</field>
+    <field id="trackerPrefix">TRAI</field>
+</project>
